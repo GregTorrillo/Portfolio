@@ -1,0 +1,1071 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #b5b4a6;
+  font-family: "Italiana", serif;
+  color: #000000;
+}
+
+/* ------------HERO------------ */
+.hero {
+  height: 100vh;
+  width: 100%;
+}
+
+.nameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 150px;
+  height: 100%;
+  margin: 0 40px;
+  border-bottom: 1px solid #444444;
+}
+
+.name h1 {
+  font-size: 12rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  line-height: 11rem;
+  background: #e52d27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #b31217,
+    #e52d27
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #b31217,
+    #e52d27
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.jobTitle h1 {
+  font-size: 10rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  color: #000000;
+  line-height: 11rem;
+}
+
+.heroSocial {
+  display: flex;
+}
+
+.heroSocial i {
+  font-size: 2rem;
+  margin-right: 35px;
+  color: #000000;
+  border: 2px solid;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s;
+}
+
+.heroSocial i:hover {
+  border-radius: 100%;
+  transform: rotate(360deg);
+  color: #b5b4a6;
+}
+
+.fa-envelope:hover,
+.fa-github:hover,
+.fa-linkedin-in:hover,
+.fa-behance:hover,
+.fa-twitter:hover,
+.fa-vimeo:hover,
+.fa-imdb:hover {
+  background-color: #e52d27;
+}
+
+/*------------PROJECTS-------------- */
+.projectsSection {
+  height: 100vh;
+  width: 100%;
+}
+
+.projectsWrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.projectsWrapper h2 {
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+}
+
+.projectsContainer {
+  width: 80vw;
+}
+
+.projectsContainer a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.projectsList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #444444;
+  padding: 50px 0;
+  position: relative;
+}
+
+ .silo {
+  border-bottom: 2px solid #444444;
+}
+
+.image {
+  height: 175px;
+  width: 400px;
+}
+.projectsList > .image {
+  position: absolute;
+  opacity: 0;
+}
+
+.projectsList:hover > .image {
+  opacity: 1;
+  cursor: pointer;
+  transition: all 2s ease;
+}
+
+.projectsList > .projectTitle {
+  display: block;
+}
+
+.projectsList:hover > .projectTitle {
+  transform: translateX(450px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.projectsList:hover {
+  cursor: pointer;
+}
+
+.projectTitle {
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+}
+
+.projectType {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+}
+
+/* -----------ABOUT------------- */
+.about {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.about h3 {
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+}
+
+.about p {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  padding: 0 200px;
+  line-height: 5rem;
+}
+
+.about ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 100px;
+  width: 100%;
+  padding: 0 200px;
+}
+
+.about li {
+  list-style: none;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  background: linear-gradient(to right, #000000 50%, #b31217 50%, #e52d27);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-out;
+  padding: 0 20px;
+}
+
+.about li:hover {
+  background-position: -100%;
+}
+
+/* ----------FOOTER--------- */
+footer {
+  height: 10vh;
+  width: 100%;
+}
+
+.footerWrapper {
+  height: 100%;
+  margin: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #444444;
+}
+
+.footerWrapper span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* --------ANIMATION---------- */
+/* INTRO LOADER */
+.intro {
+  background: #b5b4a6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-text {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  color: #000000;
+}
+
+.slider {
+  background: #e52d27;
+  background: -webkit-linear-gradient(to top, #b31217, #e52d27);
+  background: linear-gradient(to top, #b31217, #e52d27);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.hide {
+  background: #b5b4a6;
+  overflow: hidden;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+/* PAGE TRANSITION */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+}
+.pageTransition {
+  position: absolute;
+  top: 0;
+  background: #e52d27;
+  background: -webkit-linear-gradient(to top, #b31217, #e52d27);
+  background: linear-gradient(to top, #b31217, #e52d27);
+  width: 100%;
+  height: 0%;
+}
+/* SCROLL REVEAL */
+.reveal {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* ****************************************/
+/* -------------PROJECT PAGES--------------/
+/* ****************************************/
+
+.projectPageBody {
+  background: #000000;
+  font-family: "Italiana";
+  color: #b5b4a6;
+}
+
+.contentWrapper {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+}
+
+.contentContainer {
+  display: flex;
+  width: 100%;
+  margin: 40px 40px 0 40px;
+}
+
+.contentLeft {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.contentDescription {
+  width: 100%;
+  padding-right: 20px;
+}
+.contentDescription h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  padding-bottom: 20px;
+}
+
+.contentDescription p {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  line-height: 2.5rem;
+}
+
+.contentButtons {
+  display: flex;
+}
+
+.contentButtons button {
+  height: 60px;
+  width: 160px;
+  border: 1px solid #b5b4a6;
+  background: transparent;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Italiana", serif;
+  letter-spacing: 0.15rem;
+  margin: 30px 50px 0 0;
+  border-radius: 4px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  transition: 1s all ease;
+  color: #b5b4a6;
+  cursor: pointer;
+}
+
+.contentButtons button::before {
+  background: #e52d27;
+  background: -webkit-linear-gradient(to top, #b31217, #e52d27);
+  background: linear-gradient(to top, #b31217, #e52d27);
+  content: "";
+  width: 200%;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.contentButtons button:hover::before {
+  height: 400%;
+}
+
+.contentRight {
+  width: 75%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+}
+
+.contentRight img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.skillsWrapper {
+  height: 20vh;
+  width: 100%;
+}
+
+.skillsContainer {
+  margin: 0 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-top: 1px solid rgba(181, 180, 166, 0.5);
+}
+
+.skillsWrapper h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  padding-bottom: 20px;
+}
+
+.skillsContainer p {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+}
+
+/******************************************
+/*           MEDIA QUERIES
+/*******************************************/
+/* ------------------LARGE LAPTOP----------- */
+
+@media screen and (min-width: 1400px) and (max-width: 1700px) {
+  /* ---------------HERO---------------  */
+  .nameContainer {
+    padding-left: 100px;
+  }
+
+  .name h1 {
+    font-size: 10rem;
+    letter-spacing: 0.25rem;
+    line-height: 10rem;
+  }
+
+  .jobTitle h1 {
+    font-size: 7rem;
+    letter-spacing: 0.25rem;
+    line-height: 8rem;
+  }
+
+  .heroSocial i {
+    font-size: 1.5rem;
+    margin-right: 35px;
+    width: 50px;
+    height: 50px;
+  }
+  /*------------PROJECTS-------------- */
+  .projectsWrapper h2 {
+    font-size: 4rem;
+  }
+
+  .projectsList {
+    padding: 30px 0;
+  }
+
+  .image {
+    height: 120px;
+    width: 240px;
+  }
+
+  .projectTitle {
+    font-size: 4rem;
+  }
+
+  .projectsList:hover > .projectTitle {
+    transform: translateX(290px);
+  }
+
+  .projectType {
+    font-size: 1.5rem;
+  }
+
+  /* -----------ABOUT------------- */
+  .about h3 {
+    font-size: 4rem;
+  }
+
+  .about p {
+    font-size: 2rem;
+    padding: 0 150px;
+    line-height: 3rem;
+  }
+
+  .about ul {
+    padding: 0 150px;
+  }
+
+  .about li {
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+  /* ----------FOOTER--------- */
+
+  .footerWrapper span {
+    font-size: 0.75rem;
+  }
+  /* ----------INTRO------------ */
+  .intro-text {
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+  }
+  /* -------PROJECT PAGES-------- */
+  .contentDescription h1 {
+    font-size: 3.5rem;
+  }
+
+  .contentDescription p {
+    font-size: 1.25rem;
+  }
+
+  .contentButtons button {
+    height: 50px;
+    width: 140px;
+    font-size: 1rem;
+    margin: 20px 20px 0 0;
+  }
+
+  .skillsWrapper h2 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+
+  .skillsContainer p {
+    font-size: 1.5rem;
+  }
+}
+
+/* -----------------TABLET LANDSCAPE---------------------- */
+
+@media screen and (min-width: 1000px) and (max-width: 1399px) {
+  /* ---------------HERO---------------  */
+  .nameContainer {
+    padding-left: 50px;
+  }
+
+  .name h1 {
+    font-size: 7rem;
+    letter-spacing: 0.25rem;
+    line-height: 6rem;
+  }
+
+  .jobTitle h1 {
+    font-size: 5rem;
+    letter-spacing: 0.25rem;
+    line-height: 6rem;
+  }
+
+  .heroSocial i {
+    font-size: 1.25rem;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  /*------------PROJECTS-------------- */
+  .projectsWrapper h2 {
+    font-size: 3rem;
+  }
+
+  .projectsList {
+    padding: 20px 0;
+  }
+
+  .image {
+    height: 80px;
+    width: 160px;
+  }
+
+  .projectTitle {
+    font-size: 3rem;
+  }
+
+  .projectsList:hover > .projectTitle {
+    transform: translateX(210px);
+  }
+
+  .projectType {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  /* -----------ABOUT------------- */
+  .about h3 {
+    font-size: 3rem;
+  }
+
+  .about p {
+    font-size: 1.5rem;
+    padding: 0 50px;
+    line-height: 2rem;
+  }
+
+  .about ul {
+    padding: 0 50px;
+    margin-top: 50px;
+  }
+
+  .about li {
+    font-size: 1.5rem;
+    padding: 0 15px;
+  }
+  /* ----------FOOTER--------- */
+
+  .footerWrapper span {
+    font-size: 0.5rem;
+  }
+  /* ----------INTRO------------ */
+  .intro-text {
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+  }
+  /* -------PROJECT PAGES-------- */
+  .contentWrapper {
+    margin-top: 40px;
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 0 40px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .contentLeft {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contentDescription {
+    padding: 0px;
+  }
+
+  .contentLeft img {
+    display: none;
+  }
+  .contentRight {
+    width: 100%;
+  }
+
+  .contentDescription h1 {
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+    padding-bottom: 15px;
+  }
+
+  .contentDescription p {
+    font-size: 1.5rem;
+  }
+
+  .contentButtons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contentButtons button {
+    height: 50px;
+    width: 150px;
+    border: 1px solid #b5b4a6;
+    font-size: 1.25rem;
+    letter-spacing: 0.15rem;
+    margin: 20px 20px 0px 0px;
+  }
+
+  .contentRight {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 40px 20px 40px;
+    overflow: hidden;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  .skillsContainer {
+    margin: 0px 40px;
+    border-top: 1px solid rgba(181, 180, 166, 0.5);
+    align-items: center;
+  }
+
+  .skillsWrapper h2 {
+    font-size: 2rem;
+  }
+
+  .skillsContainer p {
+    font-size: 1.5rem;
+  }
+}
+
+/* -----------------TABLET PORTRAIT---------------------- */
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  /* ---------------HERO---------------  */
+  .nameContainer {
+    padding-left: 50px;
+  }
+
+  .name h1 {
+    font-size: 7rem;
+    letter-spacing: 0.25rem;
+    line-height: 6rem;
+  }
+
+  .jobTitle h1 {
+    font-size: 5rem;
+    letter-spacing: 0.25rem;
+    line-height: 5rem;
+  }
+
+  .heroSocial i {
+    font-size: 1.25rem;
+    margin: 20px 20px 0 0;
+    width: 40px;
+    height: 40px;
+  }
+  /*------------PROJECTS-------------- */
+
+  .projectsWrapper h2 {
+    font-size: 3rem;
+  }
+
+  .projectsList {
+    padding: 20px 0;
+  }
+
+  .image {
+    height: 80px;
+    width: 160px;
+  }
+
+  .projectTitle {
+    font-size: 3rem;
+  }
+
+  .projectsList:hover > .projectTitle {
+    transform: translateX(210px);
+  }
+
+  .projectType {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  /* -----------ABOUT------------- */
+  .about h3 {
+    font-size: 3rem;
+  }
+
+  .about p {
+    font-size: 1.5rem;
+    padding: 0 100px;
+    line-height: 2rem;
+  }
+
+  .about ul {
+    padding: 0 100px;
+    margin-top: 100px;
+  }
+
+  .about li {
+    font-size: 1.5rem;
+    padding: 0 15px;
+  }
+  /* ----------FOOTER--------- */
+
+  .footerWrapper span {
+    font-size: 0.5rem;
+  }
+  /* ----------INTRO------------ */
+  .intro-text {
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+  }
+  /* -------PROJECT PAGES-------- */
+  .contentContainer {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 0;
+    width: 100%;
+  }
+
+  .contentLeft {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contentLeft img {
+    display: none;
+  }
+
+  .contentDescription h1 {
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+    padding-bottom: 20px;
+  }
+
+  .contentDescription p {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
+
+  .contentButtons {
+    justify-content: center;
+  }
+
+  .contentButtons button {
+    height: 50px;
+    width: 150px;
+    border: 1px solid #b5b4a6;
+    font-size: 1.25rem;
+    letter-spacing: 0.15rem;
+    margin: 20px 30px 0px 0px;
+  }
+
+  .contentRight {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px 30px 30px;
+    overflow: hidden;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  .skillsContainer {
+    margin: 0px 30px;
+    align-items: center;
+  }
+
+  .skillsWrapper h2 {
+    font-size: 2rem;
+    padding-bottom: 30px;
+  }
+
+  .skillsContainer p {
+    font-size: 1.5rem;
+  }
+}
+
+/* -----------------MOBILE---------------------- */
+
+@media screen and (max-width: 599px) {
+  /* ---------------HERO---------------  */
+  .hero {
+    height: 400px;
+  }
+
+  .nameContainer {
+    padding-left: 0px;
+  }
+
+  .name h1 {
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    line-height: 3rem;
+  }
+
+  .jobTitle h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
+    line-height: 2.5rem;
+    padding-top: 10px;
+  }
+
+  .heroSocial {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .heroSocial i {
+    font-size: 1rem;
+    margin: 20px 10px 0 0;
+    width: 30px;
+    height: 30px;
+  }
+  /*------------PROJECTS-------------- */  
+  .projectsSection {
+    height: 500px;
+  }
+  .projectsWrapper {
+    height: 100%;
+  }
+  .projectsWrapper h2 {
+    font-size: 1.75rem;
+    letter-spacing: .15rem;
+  }
+
+  .projectsList {
+    padding: 15px 0;
+  }
+
+  .image {
+    height: 50px;
+    width: 100px;
+  }
+
+  .projectTitle {
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+  }
+
+  .projectsList:hover > .projectTitle {
+    transform: translateX(110px);
+  }
+
+  .projectType {
+    font-size: .5rem;
+    letter-spacing: 0.1rem;
+  }
+  /* -----------ABOUT------------- */
+  .about {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .about h3 {
+    font-size: 1.75rem;
+    letter-spacing: .15rem;
+  }
+
+  .about p {
+    font-size: 1.25rem;
+    padding: 0 40px;
+    line-height: 1.35rem;
+  }
+
+  .about ul {
+    padding: 0 40px;
+    margin-top: 50px;
+  }
+
+  .about li {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  /* ----------FOOTER--------- */
+  footer{
+    height: 50px;
+  }
+  .footerWrapper span {
+    font-size: 0.35rem;
+  }
+  /* ----------INTRO------------ */
+  .intro-text {
+    font-size: 1.25rem;
+    letter-spacing: 0.1rem;
+  }
+  /* -------PROJECT PAGES-------- */
+  .contentContainer {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 0 20px;
+  }
+
+  .contentLeft {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contentDescription {
+    padding: 0;
+  }
+
+  .contentLeft img {
+    display: none;
+  }
+
+  .contentDescription h1 {
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: 20px;
+  }
+
+  .contentDescription p {
+    font-size: 1rem;
+  }
+
+  .contentButtons {
+    justify-content: center;
+  }
+
+  .contentButtons button {
+    height: 40px;
+    width: 120px;
+    border: 1px solid #b5b4a6;
+    font-size: .75rem;
+    letter-spacing: 0.15rem;
+    margin: 30px 20px 0px 0px;
+  }
+
+  .contentRight {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  .skillsContainer {
+    margin: 0px 20px;
+    align-items: center;
+  }
+
+  .skillsWrapper h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .skillsContainer p {
+    font-size: .75rem;
+    letter-spacing: 0.1rem;
+  }
+}
+

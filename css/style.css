@@ -982,7 +982,7 @@ video {
   }
 
   .about ul {
-    padding: 0 40px;
+    padding: 0 30px;
     margin-top: 50px;
   }
 
@@ -1004,7 +1004,7 @@ video {
   .intro-text {
     font-size: 1.25rem;
     letter-spacing: 0.1rem;
-    margin: 0 auto;
+    margin-left: 50px;
   }
   /* -------PROJECT PAGES-------- */
   .contentContainer {

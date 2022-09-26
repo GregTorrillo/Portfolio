@@ -10,7 +10,7 @@
 Build a simple portfolio site showcasing featured projects, about me, and links to contact me.
 	
 ## Description:
-This portfolio site has a modern minimal UI and smooth UX.  The interesting hover effects were done in CSS, subtle reveal animations in Javascript, and page and intro transition animations in GSAP.  
+This portfolio site has a modern minimal UI and smooth UX.  The interesting hover effects were done using CSS, subtle reveal animations using Javascript, and page and intro transition animations using GSAP.  
 
 ## Techs used:
 <p align="left">

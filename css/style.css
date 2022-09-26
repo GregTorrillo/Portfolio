@@ -899,7 +899,8 @@ video {
   }
 
   .nameContainer {
-    padding-left: 0px;
+    padding-left: 20px;
+    margin: 0px 20px;
   }
 
   .name h1 {
@@ -934,8 +935,8 @@ video {
     height: 100%;
   }
   .projectsWrapper h2 {
-    font-size: 1.75rem;
-    letter-spacing: .15rem;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
   }
 
   .projectsList {
@@ -958,7 +959,7 @@ video {
 
   .projectType {
     font-size: .5rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.07rem;
   }
   /* -----------ABOUT------------- */
   .about {
@@ -970,14 +971,14 @@ video {
     justify-content: space-evenly;
   }
   .about h3 {
-    font-size: 1.75rem;
-    letter-spacing: .15rem;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
   }
 
   .about p {
     font-size: 1.25rem;
     padding: 0 40px;
-    line-height: 1.35rem;
+    line-height: 1.5rem;
   }
 
   .about ul {
@@ -993,6 +994,9 @@ video {
   footer{
     height: 50px;
   }
+  .footerWrapper {
+    margin: 0 20px;
+  }
   .footerWrapper span {
     font-size: 0.35rem;
   }
@@ -1000,6 +1004,7 @@ video {
   .intro-text {
     font-size: 1.25rem;
     letter-spacing: 0.1rem;
+    margin: 0 auto;
   }
   /* -------PROJECT PAGES-------- */
   .contentContainer {
@@ -1029,6 +1034,7 @@ video {
 
   .contentDescription p {
     font-size: 1rem;
+    line-height: 1.5;
   }
 
   .contentButtons {
@@ -1039,8 +1045,7 @@ video {
     height: 40px;
     width: 120px;
     border: 1px solid #b5b4a6;
-    font-size: .75rem;
-    letter-spacing: 0.15rem;
+    font-size: 1rem;
     margin: 30px 20px 0px 0px;
   }
 
@@ -1059,13 +1064,12 @@ video {
   }
 
   .skillsWrapper h2 {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     letter-spacing: 0.15rem;
   }
 
   .skillsContainer p {
-    font-size: .75rem;
-    letter-spacing: 0.1rem;
+    font-size: 1rem;
   }
 }
 

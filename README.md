@@ -7,7 +7,7 @@
 <p align="center"><a href="https://gregtorrillo.dev/" target="_blank" rel="noreferrer"><img src="https://github.com/GregTorrillo/GregTorrillo/blob/main/assets/github-website-button.png" alt="Website" width="120px" height="45px"></a></p>
 
 ## Motivation: 
-Build a simple portfolio site showcasing featured projects, about me, and links to contact me.
+Build a simple portfolio site showcasing featured projects, about me, and links to additional creative work.
 	
 ## Description:
 This portfolio site has a modern minimal UI and smooth UX.  The interesting hover effects were done using CSS, subtle reveal animations using Javascript, and page and intro transition animations using GSAP.  

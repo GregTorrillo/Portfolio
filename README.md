@@ -1,7 +1,7 @@
 <h1 align="center">GregTorrillo.dev</h1>
 
 <div align="center">
-	  <img src="https://github.com/GregTorrillo/Portfolio/blob/main/portfolio-upd.gif" width="100%" />
+	  <img src="https://github.com/GregTorrillo/Portfolio/blob/main/portfolio.gif" width="100%" />
 </div>
 <br>
 <p align="center"><a href="https://gregtorrillo.dev/" target="_blank" rel="noreferrer"><img src="https://github.com/GregTorrillo/GregTorrillo/blob/main/assets/github-website-button.png" alt="Website" width="120px" height="45px"></a></p>

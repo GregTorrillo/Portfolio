@@ -893,7 +893,7 @@ video {
   }
   /*------------PROJECTS-------------- */  
   .projectsSection {
-    height: 500px;
+    height: 400px;
   }
   .projectsWrapper {
     height: 100%;
@@ -937,6 +937,7 @@ video {
   .about h3 {
     font-size: 1.5rem;
     letter-spacing: .1rem;
+    padding-bottom: 20px;
   }
 
   .about p {

@@ -352,7 +352,7 @@ footer {
 
 .contentDescription {
   width: 100%;
-  padding-right: 20px;
+ 
 }
 .contentDescription h1 {
   font-size: 4rem;
@@ -366,6 +366,7 @@ footer {
   font-weight: 600;
   letter-spacing: 0.15rem;
   line-height: 2.5rem;
+  padding-right: 40px;
 }
 
 .contentButtons {
@@ -809,7 +810,7 @@ video {
 
   .contentDescription p {
     font-size: 1.5rem;
-    padding-bottom: 20px;
+    padding: 20px;
   }
 
   .contentButtons {
@@ -1000,6 +1001,7 @@ video {
   .contentDescription p {
     font-size: 1rem;
     line-height: 1.5;
+    padding: 0;
   }
 
   .contentButtons {

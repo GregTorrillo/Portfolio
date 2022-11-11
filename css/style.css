@@ -977,6 +977,7 @@ video {
     flex-direction: column-reverse;
     justify-content: center;
     margin: 0 20px;
+    padding-top: 20px;
   }
 
   .contentLeft {
